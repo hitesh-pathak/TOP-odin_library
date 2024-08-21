@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Project: Library</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/main.js" defer="true"></script>
+</head>
+<body>
+    <div class="flex-y">
+        <div class="hero">
+            <h1>Odin Library</h1>
+        </div>
+        <div class="top-menu menu-bar">
+            <button id="new_book_btn">+ New Book</button>
+        </div>
+        <div class="main-grid-ctn">
+
+        </div>
+        <div class="bottom-status-bar menu-bar">
+
+        </div>
+        
+    </div>
+    <dialog id="new_book_dialog">
+        <form method="dialog">
+            <div class="form-input-ctn">
+                <label for="book_title">Book Title</label>
+                <input type="text" name="title" id="book_title" required>
+            </div>
+            <div class="form-input-ctn">
+                <label for="book_author">Book Author</label>
+                <input type="text" name="author" id="book_author">
+            </div>
+            <div class="form-input-ctn">
+                <label for="book_num_pages">Number of pages</label>
+                <input type="number" name="numPages" id="book_num_pages">
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Read it yet ?</legend>
+                    <div>
+                        <input type="radio" name="isRead" id="book_is_read" value="true">
+                        <label for="book_is_read">yes</label>
+                        <input type="radio" name="isRead" id="book_is_not_read" value="" checked>
+                        <label for="book_is_not_read">no</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="menu-bar form-btn-menu">
+                <button type="submit" id="add_book_btn">Add Book</button>
+                <button type="submit" formnovalidate value="">Cancel</button>
+            </div>
+            
+
+
+
+        </form>
+    </dialog>
+
+
+</body>
+</html>
